@@ -199,8 +199,8 @@ function Run() {
     SetStyle_id("virtual_body","height",""+(TS_y1)/em_size+'em');
 
 
-   let svg=`<svg width="${TS_x1}" height="${TS_y1}" viewBox="${TS_x0} ${TS_y0} ${TS_x1} ${TS_y1}" xmlns="http://www.w3.org/2000/svg"><clipPath id="a" clipPathUnits="objectBoundingBox">
-<path transform="scale(${1.0/TS_x1} ${1.0/TS_x1})" d="${path}"/>
+   let svg=`<svg width="${BB_x1}" height="${BB_y1}" viewBox="${BB_x0} ${BB_y0} ${BB_x1} ${BB_y1}" xmlns="http://www.w3.org/2000/svg"><clipPath id="a" clipPathUnits="objectBoundingBox">
+<path transform="scale(${1.0/BB_x1} ${1.0/BB_y1})" d="${path}"/>
 </clipPath></svg>` ;
 
 let svg_base64= 'url("data:image/svg+xml;base64,'+btoa(unescape(encodeURIComponent(svg)))+'#a")';
