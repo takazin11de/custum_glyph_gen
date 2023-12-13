@@ -6,49 +6,32 @@
 <style>
   body{
 font-size: 14px;
-font-family: arial,sans-serif;}
+font-family: arial,sans-serif;
+
+}
   p{padding:0;margin:0;}
 
 /************************/
+#cc, #cc *{
+  display:block;height:100%;width:100%;
+  padding:0;margin:0;border:none;
+}
 #cc{
-  display:inline-flex;
-  height:1.0em;/* */
-  width:1.5em;/* */
-  border:solid transparent;
-  border-width:0 0 0.5em 0;/* */
-  padding:0;
-  margin:0;
-  box-sizing:content-box;
-  position:relative;
+  height:0.9em;width:1em;border-bottom:0.1em solid transparent;
+  display:inline-flex;box-sizing:content-box;position:relative;
 }
-#cc #main{
-  display:block;
-  height:100%;
-  width:100%;
-  padding:0;
-  margin:0;
-  border:none;
+#cc svg{
+  top:0em;left:0em;height:1em;transform:scale(2,1);
+  transform-origin:0%0%;position:absolute;
 }
-#cc #main_after{
-  content:"";
-  display:block;
-  top:-0.0em;/* */
-  left:-0.0em;/* */
-  height:2.5em;/* */
-  width:2.5em;/* */
-  padding:0;
-  margin:0;
-  border:none;
-  position:absolute;
-  z-index: 1;
-  clip-path: urL("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjbGlwUGF0aCBpZD0iYSIgY2xpcFBhdGhVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPgo8cGF0aCB0cmFuc2Zvcm09InNjYWxlKDAuMDAwOTc2NTYyNSkiIGQ9Im0gMzMwLjk5MDc5LDUwLjQ1OTM0NiBjIDExMi42NCw1MC4xNzYwMDQgMTk5LjY4LDEyNC45MjgwMDQgMjMzLjQ3MiwxNjkuOTg0MDA0IDExNy43Niw0OC4xMjggMTgwLjIyNCwtMTk4LjY1NjAwNCAtMjMwLjQsLTE4Mi4yNzIwMDQgeiBtIC0xMC4yNCwzMzcuOTIwMDA0IC01OS4zOTIsNjAuNDE2IEggNTAuNDE0Nzg3IGwgOS4yMTYsMjkuNjk2IEggMjY3LjUwMjc5IGMgLTMxLjc0NCwxNjAuNzY4IC0xMDUuNDcyLDMxOC40NjQgLTI0MC42NDAwMDMsNDE5Ljg0IGwgOC4xOTIsMTIuMjg4IGMgMjAyLjc1MjAwMywtOTAuMTEyIDMwNS4xNTIwMDMsLTI0Ny44MDggMzUyLjI1NjAwMywtNDE3Ljc5MiAyMi41MjgsLTIuMDQ4IDMwLjcyLC02LjE0NCAzNy44ODgsLTE2LjM4NCB6IG0gNDk1LjYxNiwtMTE0LjY4OCBjIC0zMy43OTIsNjMuNDg4IC0xMDMuNDI0LDE2Mi44MTYgLTE2Ni45MTIsMjM1LjUyIC0yOS42OTYsLTUyLjIyNCAtNTMuMjQ4LC0xMTIuNjQgLTY5LjYzMiwtMTg0LjMyIHYgLTMuMDcyIGMgMTkuNDU2LC00LjA5NiAzMS43NDQsLTEyLjI4OCAzOC45MTIsLTIwLjQ4IGwgLTExNy43NiwtODguMDY0IC01NC4yNzIsNjEuNDQgaCAtMjQzLjcxMiBsIDkuMjE2LDI4LjY3MiBoIDI0NC43MzYgdiA1MzUuNTUyIGMgMCwxNS4zNiAtNS4xMiwyMi41MjggLTIzLjU1MiwyMi41MjggLTI0LjU3NiwwIC0xNDcuNDU2LC03LjE2OCAtMTQ3LjQ1NiwtNy4xNjggdiAxNC4zMzYgYyA1Ny4zNDQsOC4xOTIgODIuOTQ0LDIyLjUyOCAxMDEuMzc2LDQwLjk2IDE3LjQwOCwxOC40MzIgMjMuNTUyLDQ3LjEwNCAyNy42NDgsODYuMDE2IDE0NC4zODQsLTEyLjI4OCAxNjQuODY0LC02MC40MTYgMTY0Ljg2NCwtMTQyLjMzNiB2IC00NzUuMTM2IGMgNTIuMjI0LDI4NS42OTYgMTU4LjcyLDQyMi45MTIgMzE4LjQ2NCw1MjkuNDA4IDE0LjMzNiwtNTguMzY4IDUwLjE3NiwtMTAxLjM3NiA5OS4zMjgsLTExMi42NCBsIDQuMDk2MDEsLTExLjI2NCBjIC0xMjMuOTA0MDEsLTQzLjAwOCAtMjUxLjkwNDAxLC0xMTQuNjg4IC0zMzguOTQ0MDEsLTI1Mi45MjggOTQuMjA4LC00NS4wNTYgMTg4LjQxNiwtMTA3LjUyIDI1MC44OCwtMTU1LjY0OCAyMy41NTIsNS4xMiAzMy43OTIsMCAzOS45MzYsLTEwLjI0IHoiLz4KPC9jbGlwUGF0aD48L3N2Zz4K#a");
-  background-color: currentColor;
+#cc path{
+  fill:currentColor;
 }
 /************************/
 
 #cc #left_right{
   display:block;
-  top:-4em;
+  top:-2em;
   height:9em;
   width:100%;
   padding:0;
@@ -61,7 +44,7 @@ font-family: arial,sans-serif;}
 }
 #cc #top_bottom{
   display:block;
-  left:-4em;
+  left:-2em;
   width:9em;
   height:1.5em;/* */
   padding:0;
@@ -74,7 +57,7 @@ font-family: arial,sans-serif;}
 }
 #cc #baseline{
   display:block;
-  left:-4em;
+  left:-2em;
   width:9em;
   height:100%;
   padding:0;
@@ -112,7 +95,7 @@ font-family: arial,sans-serif;}
 	overflow-x: scroll;
 }
 #demo_box p{
-    margin: 1.5em 0 1.5em 0;
+    margin: 0.5em 0 0.5em 0;
 }
 
 label{
@@ -140,7 +123,19 @@ p{
     white-space: pre;
 	overflow-x: scroll;
 }
-
+#hanei{
+  padding: 0.2em;
+  font-size: 1.5em;
+  margin: 0.2em;
+}
+h1{
+  margin: 0em;
+  padding: 0.15em;
+}
+h3{
+  margin: 0em;
+  padding: 0.15em;
+}
 
 
 </style>
@@ -190,83 +185,56 @@ function Run() {
 
     SetStyle_id("cc","width",""+width/em_size+'em');
     SetStyle_id("cc","height",""+ascent/em_size+'em');
-    SetStyle_id("cc","border-width","0 0 "+descent/em_size+'em 0');
+    SetStyle_id("cc","border-bottom",""+descent/em_size+'em solid transparent');
 
     SetStyle_id("top_bottom","height",""+(descent+ascent)/em_size+'em');
     
     
     SetStyle_id("main_after","left",""+(TS_x0)/em_size+'em');
-    SetStyle_id("main_after","top",""+(TS_y0+ascent-TS_y1)/em_size+'em');
-    SetStyle_id("main_after","width",""+(TS_x1)/em_size+'em');
-    SetStyle_id("main_after","height",""+(TS_y1)/em_size+'em');
+    SetStyle_id("main_after","top",""+(-TS_y0+ascent-TS_y1)/em_size+'em');
+    SetStyle_id("main_after","transform","scale("+TS_x1/em_size+','+TS_y1/em_size+')');
 
     SetStyle_id("virtual_body","left",""+(TS_x0)/em_size+'em');
-    SetStyle_id("virtual_body","top",""+(TS_y0+ascent-TS_y1)/em_size+'em');
+    SetStyle_id("virtual_body","top",""+(-TS_y0+ascent-TS_y1)/em_size+'em');
     SetStyle_id("virtual_body","width",""+(TS_x1)/em_size+'em');
     SetStyle_id("virtual_body","height",""+(TS_y1)/em_size+'em');
 
-
-   let svg=`<svg width="${BB_x1}" height="${BB_y1}" viewBox="${BB_x0} ${BB_y0} ${BB_x1} ${BB_y1}" xmlns="http://www.w3.org/2000/svg"><clipPath id="a" clipPathUnits="objectBoundingBox">
-<path transform="scale(${1.0/BB_x1} ${1.0/BB_y1})" d="${path}"/>
-</clipPath></svg>` ;
-
-let svg_base64= 'url("data:image/svg+xml;base64,'+btoa(unescape(encodeURIComponent(svg)))+'#a")';
-
-SetStyle_id("main_after","clip-path",svg_base64);
+    document.getElementById("main_after").setAttribute('viewBox',`${BB_x0} ${BB_y0} ${BB_x1} ${BB_y1}`);
 
 
-let output_text=`<!doctype html><html><head>
-<meta charset="utf-8"><title>title</title>
+    path=path.replace("\n", " ");
+    path=path.replace("\r", " ");
 
+document.getElementById("main_after_path").style.d=null;
+document.getElementById("main_after_path").setAttribute('d',path)
+
+
+
+
+let output_text=`<!doctype html><meta charset="utf-8"><title>_</title>
 <style>
-body{
-    font-family:${font_name};
-    font-size:${font_size}px;
+.custum_glyph_${glyph_name}, .custum_glyph_${glyph_name} *{
+  display:block;height:100%;width:100%;
+  padding:0;margin:0;border:none;
 }
 .custum_glyph_${glyph_name}{
-  display:inline-flex;
-  height:${ascent/em_size}em;
-  width:${width/em_size}em;
-  border:solid transparent;
-  border-width:0 0 ${descent/em_size}em 0;
-  padding:0;
-  margin:0;
-  box-sizing:content-box;
-  position:relative;
+  height:${ascent/em_size}em;width:${width/em_size}em;border-bottom:${descent/em_size}em solid transparent;
+  display:inline-flex;box-sizing:content-box;position:relative;
 }
-.custum_glyph_${glyph_name} span{
-  display:block;
-  height:100%;
-  width:100%;
-  padding:0;
-  margin:0;
-  border:none;
+.custum_glyph_${glyph_name} svg{
+  top:${(-TS_y0+ascent-TS_y1)/em_size}em;left:${TS_x0/em_size}em;transform:scale(${TS_x1/em_size},${TS_y1/em_size});
+  transform-origin:0%0%;height:1em;position:absolute;
 }
-.custum_glyph_${glyph_name} span::after{
-  content:"";
-  display:block;
-  top:${(TS_y0+ascent-TS_y1)/em_size}em;
-  left:${TS_x0/em_size}em;
-  height:${TS_y1/em_size}em;
-  width:${TS_x1/em_size}em;
-  padding:0;
-  margin:0;
-  border:none;
-  position:absolute;
-  z-index:1;
-  clip-path:${svg_base64};
-  background-color:currentColor;
+.custum_glyph_${glyph_name} path{
+  d:path("${path}");
+  fill:currentColor;
 }
 </style>
-
-</head><body>
-
-    <p>${mae_moji}<span class="custum_glyph_${glyph_name}"><span></span></span>${ushiro_moji}</p>
-
-</body></html>`
+<body style="font-family:${font_name};font-size:${font_size}px;">
+<p>${mae_moji}<span class="custum_glyph_${glyph_name}"><span></span><svg viewBox="${BB_x0} ${BB_y0} ${BB_x1} ${BB_y1}"><path/></svg></span>${ushiro_moji}</p>`
 
 SetValue_id("output",output_text);
-
+ 
 
 }
 </script>
@@ -275,7 +243,7 @@ SetValue_id("output",output_text);
 <body onload="Run();">
 
 <h1>カスタムグリフジェネレーター</h1>
-<p>比較文字設定</p>
+<h3>比較文字設定</h3>
 <label>font名:</label>
 <input id="font_name" type="text" value="arial,sans-serif"  />
 <label>fontサイズ[px]:</label>
@@ -284,7 +252,7 @@ SetValue_id("output",output_text);
 <input id="mae_moji" type="text" value="テスト"  />
 <label>後文字:</label>
 <input id="ushiro_moji" type="text" value="てすと"  />
-<p>グリフ設定</p>
+<h3>グリフ設定</h3>
 <label>グリフ名:</label>
 <input id="glyph_name" type="text" value="abcd"  />
 <label>emサイズ:</label>
@@ -295,28 +263,28 @@ SetValue_id("output",output_text);
 <input id="ascent" type="number" value="900" />
 <label>ベースラインからの深さ:</label>
 <input id="descent" type="number" value="100" />
-<p>グリフパス設定</p>
+<h3>グリフパス設定</h3>
 <label>バウンディングボックス:</label>
+<label>基点左上:</label>
 <input id="BB_x0" type="number" value="0" />
 <input id="BB_y0" type="number" value="0" />
+<label>大きさ:</label>
 <input id="BB_x1" type="number" value="1024" />
 <input id="BB_y1" type="number" value="1024" />
 <p>SVG Pathを入力</p>
 <textarea id="path">m 330.99079,50.459346 c 112.64,50.176004 199.68,124.928004 233.472,169.984004 117.76,48.128 180.224,-198.656004 -230.4,-182.272004 z m -10.24,337.920004 -59.392,60.416 H 50.414787 l 9.216,29.696 H 267.50279 c -31.744,160.768 -105.472,318.464 -240.640003,419.84 l 8.192,12.288 c 202.752003,-90.112 305.152003,-247.808 352.256003,-417.792 22.528,-2.048 30.72,-6.144 37.888,-16.384 z m 495.616,-114.688 c -33.792,63.488 -103.424,162.816 -166.912,235.52 -29.696,-52.224 -53.248,-112.64 -69.632,-184.32 v -3.072 c 19.456,-4.096 31.744,-12.288 38.912,-20.48 l -117.76,-88.064 -54.272,61.44 h -243.712 l 9.216,28.672 h 244.736 v 535.552 c 0,15.36 -5.12,22.528 -23.552,22.528 -24.576,0 -147.456,-7.168 -147.456,-7.168 v 14.336 c 57.344,8.192 82.944,22.528 101.376,40.96 17.408,18.432 23.552,47.104 27.648,86.016 144.384,-12.288 164.864,-60.416 164.864,-142.336 v -475.136 c 52.224,285.696 158.72,422.912 318.464,529.408 14.336,-58.368 50.176,-101.376 99.328,-112.64 l 4.09601,-11.264 c -123.90401,-43.008 -251.90401,-114.688 -338.94401,-252.928 94.208,-45.056 188.416,-107.52 250.88,-155.648 23.552,5.12 33.792,0 39.936,-10.24 z
 </textarea>
-<label>移動:</label>
+<label>移動（基点左,ベースライン）:</label>
 <input id="TS_x0" type="number" value="0" />
-<input id="TS_y0" type="number" value="100" />
+<input id="TS_y0" type="number" value="-100" />
 <label>大きさ:</label>
 <input id="TS_x1" type="number" value="1000" />
 <input id="TS_y1" type="number" value="1000" />
 <p></p>
-<button name="output" onclick="Run();">反映</button>
+<button id="hanei"name="output" onclick="Run();">反映</button>
 
 <div id="demo_box">
-
-<p><span id="p_mae_moji">あ</span><span id="cc"><span id="main"></span><span id="main_after"></span><span id="top_bottom"></span><span id="left_right"></span><span id="baseline"></span><span id="virtual_body"></span></span><span id="p_ushiro_moji">い</span></p>
-
+<p><span id="p_mae_moji"></span><span id="cc"><span></span><svg id="main_after" viewBox="0 0 1000 1000"><path id="main_after_path"/></svg><span id="top_bottom"></span><span id="left_right"></span><span id="baseline"></span><span id="virtual_body"></span></span><span id="p_ushiro_moji"></span></p>
 </div>
 <p>出力</p>
 <textarea id="output">
